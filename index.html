@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pokemon World</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>✨ Pokemon World ✨</h1>
+        <p>Meet the best 20 Pokémon!</p>
+    </header>
+
+    <main>
+        <div id="pokemon-container" class="pokemon-grid">
+            <p class="loading">Loading Pokémon...</p>
+        </div>
+    </main>
+
+    <!-- Description Modal -->
+    <div id="description-modal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="close-modal" class="close-button">
+                ×
+            </button>
+
+            <img id="modal-image" src="" alt="Pokemon">
+
+            <h2 id="modal-name"></h2>
+
+            <p id="modal-description"></p>
+
+            <!-- Previous / Next buttons -->
+            <div class="navigation-buttons">
+
+                <button id="previous-button">
+                    ← See Previous
+                </button>
+
+                <button id="next-button">
+                    See Next →
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -13,32 +13,64 @@
 <body>
 
     <header>
-        <h1>✨ Pokemon World ✨</h1>
-        <p>Meet the best 20 Pokémon!</p>
+        <h1>✨ Pokémon World ✨</h1>
+        <p>Explore the best 20 Pokémon!</p>
     </header>
 
     <main>
-        <div id="pokemon-container" class="pokemon-grid">
-            <p class="loading">Loading Pokémon...</p>
+
+        <!-- Search -->
+        <div class="search-container">
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search Pokémon by name..."
+            >
         </div>
+
+        <!-- Pokemon Grid -->
+        <div id="pokemon-container" class="pokemon-grid">
+
+            <p class="loading">
+                Loading Pokémon...
+            </p>
+
+        </div>
+
     </main>
+
 
     <!-- Description Modal -->
     <div id="description-modal" class="modal">
 
         <div class="modal-content">
 
+            <!-- Close -->
             <button id="close-modal" class="close-button">
                 ×
             </button>
 
-            <img id="modal-image" src="" alt="Pokemon">
+            <!-- Pokemon Image -->
+            <img
+                id="modal-image"
+                src=""
+                alt="Pokemon"
+            >
 
+            <!-- Pokemon Name -->
             <h2 id="modal-name"></h2>
 
+            <!-- Ability -->
+            <p class="ability">
+                <strong>Ability:</strong>
+                <span id="modal-ability"></span>
+            </p>
+
+            <!-- Description -->
             <p id="modal-description"></p>
 
-            <!-- Previous / Next buttons -->
+
+            <!-- Previous / Next -->
             <div class="navigation-buttons">
 
                 <button id="previous-button">
@@ -54,6 +86,7 @@
         </div>
 
     </div>
+
 
     <script src="script.js"></script>
 
